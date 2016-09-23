@@ -25,9 +25,12 @@ var body = document.querySelector('body');
 
 function makeMiddleEarth() {
   // create a section tag with an id of middle-earth
+  var middleEarth = document.createElement("section");
   // add each land as an article tag
+  var land = document.createElement('article');
   // inside each article tag include an h1 with the name of the land
   // append middle-earth to your document body
+  body.appendChild(middleEarth);
 }
 
 makeMiddleEarth();
@@ -45,7 +48,10 @@ function makeHobbits() {
 
 function keepItSecretKeepItSafe() {
   // create a div with an id of 'the-ring'
+  var Ring = document.createElement('div');
+  Ring.setAttribute('id', 'the-ring');
   // give the div a class of 'magic-imbued-jewelry'
+  Ring.setAttribute('class', 'magic-imbued-jewelry');
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
   // add the ring as a child of Frodo
 }
